@@ -16,8 +16,14 @@ def q3():
     print(f'(5+8+12)/3 = {media}')
 #4. Faça um programa que leia e imprima um número inteiro.
 def q4():
+    numero = 0
+    try:
     numero = int(input('digite um numero inteiro: '))
     print(f'você digitou: {numero}')
+    except ValueError:
+        print('o valor digitado é invalido!Apenas valores inteiros são aceitos.tente novamente')
+        except:
+            print('erro desconhecido! contate o administrador do sistema.')
 #5. Faça um programa que leia dois números reais e os imprima.
 def q5():
     num1 = float(input('digite um numero real: '))
