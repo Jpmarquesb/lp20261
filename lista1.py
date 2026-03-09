@@ -18,11 +18,11 @@ def q3():
 def q4():
     numero = 0
     try:
-    numero = int(input('digite um numero inteiro: '))
-    print(f'você digitou: {numero}')
+        numero = int(input('digite um numero inteiro: '))
+        print(f'você digitou: {numero}')
     except ValueError:
         print('o valor digitado é invalido!Apenas valores inteiros são aceitos.tente novamente')
-        except:
+        except esception as e:
             print('erro desconhecido! contate o administrador do sistema.')
 #5. Faça um programa que leia dois números reais e os imprima.
 def q5():
@@ -120,6 +120,10 @@ def q16():
 #    com base na fórmula a seguir. Após calcular o programa deve
 #    imprimir o resultado da conversão.
 #    F = (9 x C + 160) / 5
+def q17():
+    celsius = float(input("insira a temperatura em celsius: "))
+    Fahrenheit = (celsius * 9 + 160) / 5
+    print(f"{celsius} °C equilavem a{Fahrenheit}°f")
 
 #18. Faça um programa que calcule a quantidade de litros de combustível
 #    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
