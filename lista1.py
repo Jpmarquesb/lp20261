@@ -137,6 +137,16 @@ def q17():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
+def q18():
+    tempo = float(input("digite o tempo decorrido na viagem(em horas): "))
+    velocidade_media = float(input("Digite a velocidade média (em km/h): "))
+    distancia = tempo * velocidade_media
+    litros_consumidos = distancia / 12
+
+    print("-" * 30)
+    print(f"Distância percorrida: {distancia:.2f} km")
+    print(f"Combustível consumido: {litros_consumidos:.2f} litros")
+    print("-" * 30)
 
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
@@ -144,10 +154,41 @@ def q17():
 #    programa deve imprimir o valor da prestação atrasada, o período
 #    de atraso, os juros que serão cobrados pelo período de atraso, o
 #    valor da prestação acrescido dos juros. Considere juros simples.
+def q19():
+    valor_vencido = float(input("Digite o valor da prestação vencida (R$): "))
+    valor_vencido = float(input("Digite o valor da prestação vencida (R$): "))
+    taxa_percentual = float(input("Digite a taxa periódica de juros (em %): "))
+    periodo_atraso = int(input("Digite o período de atraso (ex: dias ou meses): "))
+    taxa_decimal = taxa_percentual / 100
+    valor_juros = valor_vencido * taxa_decimal * periodo_atraso
+    valor_total = valor_vencido + valor_juros
+    print("\n" + "="*30)
+    print(f"Valor original: R$ {valor_vencido:.2f}")
+    print(f"Período de atraso: {periodo_atraso} unidade(s)")
+    print(f"Juros acumulados: R$ {valor_juros:.2f}")
+    print(f"Valor total a pagar: R$ {valor_total:.2f}")
+    print("="*30)
 
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
+def q20():
+    valor_dolar = float(input("Digite o valor em dólar (US$): "))
+    cotacao_dia = float(input("Digite o valor da cotação atual (R$): "))
+    valor_real = valor_dolar * cotacao_dia
+    print("-" * 40)
+    print(f"Valor original: US$ {valor_dolar:.2f}")
+    print(f"Cotação utilizada: R$ {cotacao_dia:.2f}")
+    print(f"Valor convertido: R$ {valor_real:.2f}")
+    print("-" * 40)
+
+
+
+
+
+
+
+
 questao = input('digite a questão a ser executada: ')
 eval(f'q{questao}()')
 
