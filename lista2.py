@@ -89,14 +89,31 @@ def q5():
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
-gt
+def q6():
+   salario_bruto = float(input("digite o valor do salario bruto: R$ "))
+   valor_prestacao = float(input("digite o valor da prestação desejada: R$ "))
+
+   limite_maximo = salario_bruto * 0.30
+   if valor_prestacao <= limite_maximo:
+    print(f"\emprestimo concedido")
+    print(f"o valor da prestação(R${valor_prestacao:.2f}) está dentro do limite de R${limite_maximo:.2f}.")
+    else:
+        print(f"\emprestimo negado")
+        print(f"o valor da prestação(R${valor_prestacao:.2f}) está fora do limite permitido de R${limite_maximo:.2f}.")
 
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
-
+def q7():
+    num = float(input("digite o numero escolhido: "))
+    if num =>20 and num <=50:
+        print(f"o numero está compreendido entre 20 e 50")
+        else:
+            print(f"o numero não está sendo compreendido entre 20 e 50")
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
-
+def q8():
+    num = float(input("digite o numero escolhido: "))
+    if 
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
 #   ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de
 #   verificar se o ano de nascimento informado é válido.
