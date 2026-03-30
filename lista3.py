@@ -22,11 +22,17 @@ def exemploEnquanto(): # Quando não se sabe quantas iterações serão necessá
 #4. Faça um programa que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
+def q4() -> None:
 
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
-
+def q5() -> None:
+    multiplicando: int = inputint('multiplicando: ')
+    multiplicador: int = inputint('multiplicador: ')
+    resultado: int = 0
+    for _ in range(multiplicando):
+        produto += multiplicadorprint(f'{multiplicando} * {multiplicador} = {produto}')
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 #Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
 #a partir da soma dos anteriores. Exemplo:
