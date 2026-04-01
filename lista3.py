@@ -14,7 +14,9 @@ def exemploEnquanto(): # Quando não se sabe quantas iterações serão necessá
         opcao = int(input('Opção: '))
 
 #1.Faça um programa que imprima todos os números de 1 até 100.
-
+def q1(): -> None: 
+    for i range(1,101)
+    print i
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
 
 #3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
@@ -44,7 +46,15 @@ def q5() -> None:
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
-
+def q7() -> None:
+    QTDE_ALUNOS:FINAL = 15
+    DIARIO = f'{'nome':<11}{'N1':>5}{'N2':>50}{'MEDIA':^7}\n\n'
+    for _ in range(QTDE_ALUNOS):
+        nome: str = gerar_palavra()
+        prova1: float = round(random.random()*10,1)
+        prova2: float = round(random.random()*10,1)
+        media: float = round((prova1 + prova2)/2,1)
+        diario += f'{nome:<11}{prova1:>5}{prova2:>5}{VERMELHO IF media}'
 #8. Faça um programa que permita entrar com o nome e o salário bruto de 10 pessoas.
 #Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
 #calculado conforme a tabela a seguir:
