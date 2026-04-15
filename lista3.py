@@ -62,6 +62,35 @@ def q7() -> None:
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
+# Lista para armazenar os dados das pessoas
+def q8() -> None:
+pessoas = []
+print("--- Cadastro de Funcionários ---")
+for i in range(1, 11):
+    print(f"Pessoa {i}:")
+    nome = input("Digite o nome: ")
+    salario_bruto = float(input(f"Digite o salário bruto de {nome}: R$ "))
+    if salario_bruto < 1300:
+        aliquota = "Isento"
+        valor_imposto = 0.0
+    elif salario_bruto < 2300:
+        aliquota = "10%"
+        valor_imposto = salario_bruto * 0.10
+    else:
+        aliquota = "15%"
+        valor_imposto = salario_bruto * 0.15
+    pessoas.append({
+        "nome": nome,
+        "aliquota": aliquota,
+        "imposto": valor_imposto
+    })
+    print("-" * 20)
+print("\n--- Resultado do Cálculo de IRPF ---")
+print(f"{'Nome':<20} | {'Alíquota':<10} | {'Valor do Imposto':<15}")
+print("-" * 50)
+
+for p in pessoas:
+    print(f"{p['nome']:<20} | {p['aliquota']:<10} | R$ {p['imposto']:>12.2f}")
 
 #9. No dia da estreia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
@@ -85,7 +114,19 @@ def q7() -> None:
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
-
+def q11() -> None:
+    contador_faixa = 0
+    print("Contador de Números entre 100 e 200")
+    print("Dica: Digite 0 para encerrar o programa.\n")
+    while True:
+        numero = float(input("digite um número: "))
+        if numero ==0:
+            break
+            if 100 <= numero<= 200:
+                contador_faixa += 1
+                print("\n" + "="*30)
+                print(f"total de numeros entre 100 e 200: {contador_faixa}")
+                print("="*30)
 #12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
