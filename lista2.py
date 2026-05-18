@@ -117,6 +117,19 @@ def q8():
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
 #   ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de
 #   verificar se o ano de nascimento informado é válido.
+def q9():
+     ano_atual = datetime.now().year
+     try:
+        ano_nascimento = int(input("digite o ano de nascimento: "))
+        if ano_nascimento > ano_atual:
+            print("erro: o ano de nascimento não pode ser no futuro.")
+            elif ano_nascimento < 1990:
+                print("erro: ano de nascimneto invalido")
+                else:
+                    idade = ano_atual - ano_nascimento
+                    print(f"a pessoa tem {idade} anos.")
+                    except ValueError:
+                        print("erro:digite um numero valido para o ano.")
 
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
