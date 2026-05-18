@@ -133,7 +133,8 @@ def q9():
 
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
-
+def q10():
+    
 #11. Faça um programa que leia 3 números e imprima o maior deles.
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
