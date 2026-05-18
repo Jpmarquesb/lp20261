@@ -127,7 +127,8 @@ def q3() -> None:
 
 #19. Suponha uma estrutura de 30 elementos contendo: código e telefone. Faça
 #um programa que permita buscar pelo código e imprimir o telefone.
-
+def(q9):
+    
 #20. Faça um programa que leia a matrícula e a média de 100 alunos. Ordene da maior
 #para a menor nota e imprima uma relação contendo todas as matrículas e médias.
 
