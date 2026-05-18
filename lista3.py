@@ -25,6 +25,7 @@ def q1(): -> None:
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
 def q4() -> None:
+    print
 
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
