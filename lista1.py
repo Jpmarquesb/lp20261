@@ -181,7 +181,7 @@ def q20():
     print(f"Cotação utilizada: R$ {cotacao_dia:.2f}")
     print(f"Valor convertido: R$ {valor_real:.2f}")
     print("-" * 40)
-
+f
 
 
 
